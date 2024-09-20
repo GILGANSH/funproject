@@ -1,0 +1,47 @@
+footer{
+    display: grid;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width:auto;
+    height: auto;
+    background-color: #757575;
+    /* padding: 20px; */
+    border-radius: 20px;
+}
+
+.LogoCompany{
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 60px;
+    max-height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.BackgroundInformation{
+    text-align: center;
+    text-decoration: none;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.ulComponent{
+    list-style: none;
+}
+
+.Contacts{
+    text-align: center;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.liElementByContact{
+    padding-top: 5px;
+}
+
+.navlink{
+    color: rgb(27, 25, 25);
+    text-decoration: none;
+    display: inline-block;
+}
