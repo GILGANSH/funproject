@@ -2,7 +2,7 @@
 // Это стартовый компонент который появляется при начальной загрузке
 import { useState } from "react";
 import style from "./StartComponent.module.css";
-
+import axios from "axios"
 
 
 const StartComponent = (props) =>{
@@ -19,13 +19,19 @@ const StartComponent = (props) =>{
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Отправить данные формы на сервер, в formData хранятся данные с формы
-        console.log(formData);
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
+        // console.log(formData)
+        axios.post('http://127.0.0.1:8000/api/sendingdata', formData)  
+        .then(response => {
+            // Вот эта вот setFormData должна отрабатывать только если данные укатали на сервер.
+            setFormData({
+                name: '',
+                email: '',
+                message: '',
+              });
+        })  
+        .catch(error => {  
+            console.error('Ошибка при запросе:', error);  
+        });
     };
     
     return(
