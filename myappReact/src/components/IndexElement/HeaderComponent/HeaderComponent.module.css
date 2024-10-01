@@ -1,0 +1,52 @@
+
+
+.myheader{
+    display: grid;
+    position: sticky;
+    background-color: #40413d;
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 100%;
+    color: white;
+}
+
+li{
+    list-style: none; /* убирает точку перед элементом списка */
+}
+
+.myul{
+    text-align: center;
+    display: grid;
+}
+
+.li1{
+    grid-column: 1;
+}
+
+.li2{
+    grid-column: 2;
+}
+
+.li3{
+    grid-column: 3;
+}
+
+.navlink{
+    color: rgb(99, 99, 209);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #099962;
+    border-radius: 15px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.navlink:hover{
+    color: rgb(13, 13, 155);
+    transform: scale(1.05);
+}
+ 
+.navlink:visited{
+    color: gold;
+} 
